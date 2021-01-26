@@ -2,7 +2,7 @@
     import { createEventDispatcher } from 'svelte';
     import Progress from './Progress.svelte';
 
-    const totalSeconds = 5;
+    const totalSeconds = 20;
     let secondsLeft = totalSeconds;
     let isRunning = false;
     $: progress = ((totalSeconds - secondsLeft) / totalSeconds) * 100
